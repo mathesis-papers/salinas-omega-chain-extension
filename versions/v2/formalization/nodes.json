@@ -1,0 +1,316 @@
+{
+  "nodes": [
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s1",
+      "contributor": null,
+      "identity": "collected:salinas-omega-chain-extension:2:s1",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "2b5b552e72596710282b713f6587c7020544535d",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/2b5b552e72596710282b713f6587c7020544535d/D5/S3/ConceptDynamics/DagCompletion/SalinasSchmeisOmegaChainExtensionRefutation.lean"
+      },
+      "lineage": "collected:salinas-omega-chain-extension:s1",
+      "macros": {
+        "\\N": "\\mathbb N"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "salinas-omega-chain-extension",
+      "scope": "in_scope",
+      "statement": "No poset containing an incomparable pair and having no maximal element\norder-embeds into both $R$ and $T$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Bounded-height classification for Salinas Schmeis's ω-chain extension question",
+      "toolchain": null,
+      "version": 2,
+      "work": "salinas-omega-chain-extension"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s2",
+      "contributor": null,
+      "identity": "collected:salinas-omega-chain-extension:2:s2",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "2b5b552e72596710282b713f6587c7020544535d",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/2b5b552e72596710282b713f6587c7020544535d/D5/S3/ConceptDynamics/DagCompletion/SalinasSchmeisOmegaChainExtensionRefutation.lean"
+      },
+      "lineage": "collected:salinas-omega-chain-extension:s2",
+      "macros": {
+        "\\N": "\\mathbb N"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "salinas-omega-chain-extension",
+      "scope": "in_scope",
+      "statement": "Neither the two-element antichain nor the connected fork $F$ has an admissible\nextension satisfying \\eqref{universal}. In particular, Question 2.32 is answered\nnegatively.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Bounded-height classification for Salinas Schmeis's ω-chain extension question",
+      "toolchain": null,
+      "version": 2,
+      "work": "salinas-omega-chain-extension"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s3",
+      "contributor": null,
+      "identity": "collected:salinas-omega-chain-extension:2:s3",
+      "kind": "paper",
+      "label": "Proposition",
+      "lean_source": {
+        "revision": "2b5b552e72596710282b713f6587c7020544535d",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/2b5b552e72596710282b713f6587c7020544535d/D5/S3/ConceptDynamics/DagCompletion/SalinasSchmeisOmegaChainExtensionRefutation.lean"
+      },
+      "lineage": "collected:salinas-omega-chain-extension:s3",
+      "macros": {
+        "\\N": "\\mathbb N"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "salinas-omega-chain-extension",
+      "scope": "in_scope",
+      "statement": "Every poset $P$ has an admissible extension.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Bounded-height classification for Salinas Schmeis's ω-chain extension question",
+      "toolchain": null,
+      "version": 2,
+      "work": "salinas-omega-chain-extension"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s4",
+      "contributor": null,
+      "identity": "collected:salinas-omega-chain-extension:2:s4",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "2b5b552e72596710282b713f6587c7020544535d",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/2b5b552e72596710282b713f6587c7020544535d/D5/S3/ConceptDynamics/DagCompletion/SalinasSchmeisOmegaChainExtensionRefutation.lean"
+      },
+      "lineage": "collected:salinas-omega-chain-extension:s4",
+      "macros": {
+        "\\N": "\\mathbb N"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "salinas-omega-chain-extension",
+      "scope": "in_scope",
+      "statement": "A nonempty countable poset $P$ of bounded finite height has an admissible extension satisfying\n\\eqref{universal} if and only if $P$ has a greatest element.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Bounded-height classification for Salinas Schmeis's ω-chain extension question",
+      "toolchain": null,
+      "version": 2,
+      "work": "salinas-omega-chain-extension"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s5",
+      "contributor": null,
+      "identity": "collected:salinas-omega-chain-extension:2:s5",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "2b5b552e72596710282b713f6587c7020544535d",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/2b5b552e72596710282b713f6587c7020544535d/D5/S3/ConceptDynamics/DagCompletion/SalinasSchmeisOmegaChainExtensionRefutation.lean"
+      },
+      "lineage": "collected:salinas-omega-chain-extension:s5",
+      "macros": {
+        "\\N": "\\mathbb N"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "salinas-omega-chain-extension",
+      "scope": "in_scope",
+      "statement": "A nonempty finite poset has a least admissible extension exactly when it\nhas a greatest element. The same equivalence holds for every nonempty\ncountable antichain: the only positive case is a singleton.\nThe poset with one bottom point and any finite or countably infinite\nnumber of incomparable maximal points at least two is also a counterexample.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Bounded-height classification for Salinas Schmeis's ω-chain extension question",
+      "toolchain": null,
+      "version": 2,
+      "work": "salinas-omega-chain-extension"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s6",
+      "contributor": null,
+      "identity": "collected:salinas-omega-chain-extension:2:s6",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "2b5b552e72596710282b713f6587c7020544535d",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/2b5b552e72596710282b713f6587c7020544535d/D5/S3/ConceptDynamics/DagCompletion/SalinasSchmeisOmegaChainExtensionRefutation.lean"
+      },
+      "lineage": "collected:salinas-omega-chain-extension:s6",
+      "macros": {
+        "\\N": "\\mathbb N"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "salinas-omega-chain-extension",
+      "scope": "in_scope",
+      "statement": "The two-element antichain has no extension partitionable into\n$\\omega^*$-chains that embeds into every such extension. The same is true\nof the order dual of $F$. Every poset has an extension partitionable into\n$\\omega^*$-chains. A nonempty countable poset of bounded finite height has a least such extension if\nand only if it has a least element.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Bounded-height classification for Salinas Schmeis's ω-chain extension question",
+      "toolchain": null,
+      "version": 2,
+      "work": "salinas-omega-chain-extension"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s7",
+      "contributor": null,
+      "identity": "collected:salinas-omega-chain-extension:2:s7",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "2b5b552e72596710282b713f6587c7020544535d",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/2b5b552e72596710282b713f6587c7020544535d/D5/S3/ConceptDynamics/DagCompletion/SalinasSchmeisOmegaChainExtensionRefutation.lean"
+      },
+      "lineage": "collected:salinas-omega-chain-extension:s7",
+      "macros": {
+        "\\N": "\\mathbb N"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "salinas-omega-chain-extension",
+      "scope": "in_scope",
+      "statement": "The extension $E=P\\times\\N$ in Proposition~\\ref{existence} has the lifting\nproperty, with an explicit fiberwise injection for every Noetherian subset.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Bounded-height classification for Salinas Schmeis's ω-chain extension question",
+      "toolchain": null,
+      "version": 2,
+      "work": "salinas-omega-chain-extension"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s8",
+      "contributor": null,
+      "identity": "collected:salinas-omega-chain-extension:2:s8",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "2b5b552e72596710282b713f6587c7020544535d",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/2b5b552e72596710282b713f6587c7020544535d/D5/S3/ConceptDynamics/DagCompletion/SalinasSchmeisOmegaChainExtensionRefutation.lean"
+      },
+      "lineage": "collected:salinas-omega-chain-extension:s8",
+      "macros": {
+        "\\N": "\\mathbb N"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "salinas-omega-chain-extension",
+      "scope": "in_scope",
+      "statement": "Every poset has an extension partitionable into $\\alpha$-chains for each\nnonzero ordinal $\\alpha$, and hence an extension with an $\\alpha$-skeleton.\nFor each integer $n\\geq2$, an $n$-skeleton need not extend to a partition\nof the original poset into $n$-chains.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Bounded-height classification for Salinas Schmeis's ω-chain extension question",
+      "toolchain": null,
+      "version": 2,
+      "work": "salinas-omega-chain-extension"
+    }
+  ]
+}

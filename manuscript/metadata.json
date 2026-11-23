@@ -1,0 +1,15 @@
+{
+  "id": "salinas-omega-chain-extension",
+  "revision": 2,
+  "problem_ids": ["salinas-omega-chain-extension"],
+  "topic": "Salinas Schmeis's least omega-chain-partitionable extension question",
+  "title": "Bounded-height classification for Salinas Schmeis's ω-chain extension question",
+  "creators": [
+    {"name": "Ma, Haobo", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+    {"name": "Zhang, Wenlin", "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore"}
+  ],
+  "abstract": "Question 2.32 on page 14 of Remi Salinas Schmeis's General Criterion for a Poset to Admit a Partition Into ω-Chains (arXiv:2610.29056v1, 2026) asks whether every poset has an ω-chain-partitionable extension that order-embeds into every such extension. We answer negatively: even a two-element antichain has no such extension. Two countable extensions force incompatible behavior for upper bounds of incomparable elements. The same argument gives the connected three-element fork as a counterexample and, by order duality, the corresponding negative answer for ω*-chains. More generally, a nonempty countable poset of bounded finite height has such a least extension if and only if it has a greatest element. Every poset has a partitionable extension, even with ω replaced by any nonzero ordinal.",
+  "summary": "A nonempty countable poset of bounded finite height has a least ω-chain-partitionable extension under unrestricted order embeddings exactly when it has a greatest element. Written proofs include the finite classification, smallest counterexample, dual classification, explicit lifting injections and partitionable extensions for every nonzero ordinal. The pinned Lean declaration proves the negative universal assertion using the connected fork; bounded finite computations check the displayed constructions.",
+  "license": "cc-by-4.0",
+  "evidence_url": "https://github.com/the-omega-institute/trureturing/blob/2b5b552e72596710282b713f6587c7020544535d/D5/S3/ConceptDynamics/DagCompletion/SalinasSchmeisOmegaChainExtensionRefutation.lean"
+}

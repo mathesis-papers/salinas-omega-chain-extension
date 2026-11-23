@@ -1,0 +1,368 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=27mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array,longtable}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\N}{\mathbb N}
+\title{Bounded-height classification for Salinas Schmeis's\texorpdfstring{\\$\omega$}{ omega}-chain extension question}
+\author{Haobo Ma\\\small ChronoAI Pte Ltd, Singapore
+\and Wenlin Zhang\\\small National University of Singapore\\\small ChronoAI Pte Ltd, Singapore}
+\date{November 14, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Question 2.32 on page 14 of Remi Salinas Schmeis's \emph{General Criterion
+for a Poset to Admit a Partition Into $\omega$-Chains}
+(arXiv:2610.29056v1, 2026) asks whether every poset has an
+$\omega$-chain-partitionable extension that order-embeds into every such
+extension. We answer negatively: even a two-element antichain has no such
+extension. Two countable extensions force incompatible behavior for upper
+bounds of incomparable elements. The same argument gives the connected
+three-element fork as a counterexample and, by order duality, the corresponding
+negative answer for $\omega^*$-chains. More generally, a nonempty countable
+poset of bounded finite height has such a least extension if and only if it
+has a greatest element. Every poset has a partitionable extension, even
+with $\omega$ replaced by any nonzero ordinal.
+\end{abstract}
+
+\section{The question and two extensions}
+Salinas Schmeis's universal extension question fails even for a two-element
+antichain. We classify the countable posets of bounded finite height for
+which the answer is positive, and exhibit two explicit extensions explaining
+the smallest obstruction.
+
+An \emph{$\omega$-chain} is a subset with its inherited order isomorphic to
+$(\N,\leq)$; here $0\in\N$. Call a poset \emph{admissible} if it has a partition
+into $\omega$-chains. An extension of $P$ is a poset containing an induced copy
+of $P$, equivalently a poset $Q$ admitting an order embedding $P\hookrightarrow Q$.
+An order embedding preserves and reflects the order.
+We work with the axiom of choice, as in the source's conventions
+\cite[p.~2]{salinas}.
+
+Salinas Schmeis \cite[Question 2.32, p.~14]{salinas} asks whether there is an
+admissible extension $Q$ of every $P$ such that
+\begin{equation}\label{universal}
+ Q\hookrightarrow Q' \qquad\text{for every admissible extension }Q'\text{ of }P.
+\end{equation}
+The question requires that ``$Q$ is order-isomorphic to a subposet of $Q'$''
+\cite[p.~14]{salinas}. It is a leastness property for
+embeddability, not simply inclusion-minimality. The embeddings in
+\eqref{universal} need not fix the distinguished copy of $P$. We disprove even
+this unrestricted version.
+
+The completion analogy motivating \cite[Question 2.32]{salinas} depends on
+the target class and the structure preserved. For example, Abela and Chetcuti
+\cite[Theorem 3.14]{abela} give a MacNeille extension theorem for join-regular
+sublattices when both the ambient complete lattice and the MacNeille completion
+satisfy the join-infinite distributive law. Those targets are complete lattices.
+In contrast, our first target below has incomparable elements with no common
+upper bound.
+
+Let $F=\{r,a,b\}$ have $r<a$, $r<b$ and $a\parallel b$. Define
+$R=\{0,1\}\times\N$ by
+\begin{equation}\label{rays}
+ (i,n)\leq_R(j,m)\quad\Longleftrightarrow\quad
+ (i,n)=(0,0)\ \text{or}\ (i=j\text{ and }n\leq m).
+\end{equation}
+Thus $(0,0)$ is a least element, and above it are two separate rays. This is a
+partial order: the only comparisons between different rays start at the least
+element; all other comparisons are those of a single copy of $\N$.
+The two fibers $\{i\}\times\N$ form an admissible partition. Map
+$(r,a,b)$ to $((0,0),(0,1),(1,0))$ to embed $F$ in $R$.
+
+Define $T$ on $\N$ by
+\begin{equation}\label{tail}
+ x\leq_T y\quad\Longleftrightarrow\quad
+ x\leq y\text{ in }\N\ \text{and}\ (x,y)\ne(1,2).
+\end{equation}
+Reflexivity and antisymmetry follow from the usual order. For transitivity,
+if $x\leq_T y\leq_T z$, the only possible failure would be $x=1,z=2$.
+Then $y=1$ or $y=2$, and one of the assumed comparisons is already forbidden.
+The even and odd integers partition $T$ into $\omega$-chains, with increasing
+enumerations $n\mapsto2n$ and $n\mapsto2n+1$. The map
+$(r,a,b)\mapsto(0,1,2)$ embeds $F$ in $T$.
+
+Two structural facts give the obstruction. In $R$, any two elements with a
+common upper bound are comparable: unless one is the least element, both
+must lie on the same ray. In $T$, the only unordered incomparable pair is
+$\{1,2\}$, and every strict upper bound of either member is at least $3$ and
+therefore an upper bound of both.
+
+\begin{theorem}\label{obstruction}
+No poset containing an incomparable pair and having no maximal element
+order-embeds into both $R$ and $T$.
+\end{theorem}
+\begin{proof}
+Suppose $x\parallel y$ in $Q$ and $f:Q\hookrightarrow R$,
+$g:Q\hookrightarrow T$ are order embeddings. Choose $z>x$, using the absence
+of maximal elements. Order reflection makes $g(x),g(y)$ incomparable, so the
+structural fact about $T$ gives $g(y)\leq_T g(z)$. Reflecting this comparison
+gives $y\leq z$. Consequently $f(z)$ is a common upper bound of $f(x)$ and
+$f(y)$ in $R$. Those two elements are comparable, and reflection under $f$
+contradicts $x\parallel y$.
+\end{proof}
+
+\begin{corollary}\label{counterexamples}
+Neither the two-element antichain nor the connected fork $F$ has an admissible
+extension satisfying \eqref{universal}. In particular, Question 2.32 is answered
+negatively.
+\end{corollary}
+\begin{proof}
+Every element of an admissible poset has a strict successor in its partition
+part, so an admissible poset has no maximal element. Both $R$ and $T$ are
+admissible extensions of $F$ and of the antichain $\{a,b\}$. A proposed $Q$
+contains an incomparable pair and must embed into both $R$ and $T$, contrary
+to Theorem~\ref{obstruction}.
+\end{proof}
+
+\section{Existence and bounded-height classification}
+\begin{proposition}\label{existence}
+Every poset $P$ has an admissible extension.
+\end{proposition}
+\begin{proof}
+On $P\times\N$ put
+$(p,n)\leq(q,m)$ if $p<q$, or if $p=q$ and $n\leq m$.
+For transitivity, if the first coordinates are not all equal, at least one
+strict comparison makes the first coordinate strictly increase across the
+two comparisons. If they are all equal, use transitivity in $\N$.
+Reflexivity is immediate, and antisymmetry follows first in $P$, then in
+$\N$. The map $p\mapsto(p,0)$ is an order embedding. The fibers
+$\{p\}\times\N$ form the required partition; if $P$ is empty, use the empty
+partition.
+\end{proof}
+
+We say that $P$ has \emph{bounded finite height} if there is an integer $h$
+bounding the number of points in every chain in $P$; for nonempty $P$,
+its \emph{height} is the largest such chain size. Countable includes finite.
+We use the following elementary partition fact. A nonempty countable set
+can index a partition of $\N$ into infinite cofinal subsets: for $m$ indices
+use residue classes modulo $m$; for indices $i\in\N$ use
+\[
+ S_i=\{2^i(2k+1)-1:k\in\N\}.
+\]
+Each natural number belongs to exactly one $S_i$, by factoring its successor
+into a power of two times an odd number.
+
+\begin{theorem}\label{finite}
+A nonempty countable poset $P$ of bounded finite height has an admissible extension satisfying
+\eqref{universal} if and only if $P$ has a greatest element.
+\end{theorem}
+\begin{proof}
+Let $U=P\oplus\N$, putting every element of $P$ below every element of the
+new $\N$-summand. Index a partition of that summand into infinite cofinal
+sets $S_p$ by $p\in P$, as above. The sets $\{p\}\cup S_p$ partition $U$
+into $\omega$-chains, so $U$ is admissible.
+
+Suppose first that $P$ has greatest element $t$.
+Given an admissible extension $e:P\hookrightarrow Q'$, take
+the tail strictly above $e(t)$ in the partition part containing $e(t)$.
+Map the new $\N$-summand in increasing order onto this tail and use $e$ on
+$P$. This is an order embedding: the tail is above every $e(p)$, and no tail
+element can be below an $e(p)\leq e(t)$. Thus $U$ satisfies \eqref{universal}.
+
+Conversely, suppose $P$ has no greatest element, and let its height be $h$.
+Every point lies below a maximal point, since a strictly ascending sequence
+has at most $h$ points. Its set $M$ of maximal elements therefore has at
+least two members. Define $V$ by retaining $P$ and adding
+a separate ray $\{(m,n):n\in\N\}$ above each $m\in M$. Put
+$p<(m,n)$ exactly when $p\leq_P m$, order each ray by $\N$, and put no
+comparisons between different rays. These rules define a partial order.
+It is admissible: assign each $p\in P$ to one maximal element above it;
+then partition each ray into as many infinite cofinal subsequences as there
+are points assigned to it, using the countable partition fact, and prepend
+one assigned point to each subsequence.
+Each maximal element is assigned to itself, so every indexing set is nonempty.
+
+If an admissible $Q$ satisfied \eqref{universal}, it would embed into both
+$U$ and $V$. Its embedding into $U$ forces $Q$ to be upward directed.
+Here upward directed means that every pair has a common upper bound.
+Indeed, above any $x\in Q$ its partition part contains an increasing
+$\omega$-sequence. Its image eventually leaves the bounded-height summand $P$ and
+exceeds any specified element of $U$. For each $y\in Q$, reflecting such a
+comparison gives a common upper bound of $x$ and $y$ in $Q$.
+
+Let $f:Q\hookrightarrow V$. The image of any $\omega$-chain in $Q$ contains
+a ray element $(m,n)$, since $P$ has bounded finite height. Directedness
+implies that every element of $f(Q)$ lies in
+\[
+ (\mathord\downarrow_P m)\ \cup\ \{(m,k):k\in\N\}:
+\]
+a common upper bound with $(m,n)$ must lie on this same ray. Now compose
+$P\hookrightarrow Q$ with $f$. The images of the distinct maximal elements
+of $P$ are pairwise incomparable. No such image can lie on the ray, whose
+elements are comparable with every element of this displayed set. Nor can
+any such image be $m$, which is also comparable with every element of the
+set. Thus all maximal elements have images strictly below $m$. Every point
+of $P$ lies below a maximal element, so the entire image of $P$ is strictly
+below $m$. A chain of $h$ points in $P$ would then map to a chain of $h$
+points below $m$; appending $m$ gives $h+1$ points in a chain of $P$,
+contradicting its height.
+\end{proof}
+
+\begin{corollary}\label{finitecase}
+A nonempty finite poset has a least admissible extension exactly when it
+has a greatest element. The same equivalence holds for every nonempty
+countable antichain: the only positive case is a singleton.
+The poset with one bottom point and any finite or countably infinite
+number of incomparable maximal points at least two is also a counterexample.
+\end{corollary}
+\begin{proof}
+Finite posets and antichains have bounded finite height. Apply
+Theorem~\ref{finite}; an antichain has a greatest element only when it is
+a singleton.
+The last posets have height two and no greatest element.
+\end{proof}
+
+The empty poset has the empty admissible extension. Every one-element poset
+has a greatest element, whereas the two-element antichain does not. Hence
+the two-point counterexample has smallest possible cardinality. For a nonempty
+finite chain, $\N$ itself is a least admissible extension: the chain embeds
+as an initial finite segment, and every nonempty admissible poset contains
+an $\omega$-chain.
+
+\section{Duality and neighboring partition questions}
+\begin{corollary}\label{dual}
+The two-element antichain has no extension partitionable into
+$\omega^*$-chains that embeds into every such extension. The same is true
+of the order dual of $F$. Every poset has an extension partitionable into
+$\omega^*$-chains. A nonempty countable poset of bounded finite height has a least such extension if
+and only if it has a least element.
+\end{corollary}
+\begin{proof}
+Taking order duals converts an $\omega^*$-chain partition into an
+$\omega$-chain partition, preserves order embeddings, and converts the
+asserted universal property into \eqref{universal}. Apply
+Corollary~\ref{counterexamples}, observing that an antichain is self-dual.
+The existence assertion and the bounded-height classification follow in the same way
+from Proposition~\ref{existence} and Theorem~\ref{finite}, respectively.
+\end{proof}
+
+The bounded-height hypothesis cannot simply be dropped: $\N$ itself is
+admissible, so it is its own least admissible extension although it has no
+greatest element. This is a generalization not asserted in the posing source.
+
+For the neighboring lifting and skeleton questions we record two direct
+consequences of the existence construction. A subset is \emph{Noetherian}
+if it contains no $\omega$-chain. The \emph{lifting property} of
+\cite[Definition 2.26]{salinas} requires that, for every Noetherian subset
+$K$, there be an injection from $K$ into the points outside $K$ strictly
+above some point of $K$, taking every point strictly upward.
+
+\begin{corollary}\label{lifting}
+The extension $E=P\times\N$ in Proposition~\ref{existence} has the lifting
+property, with an explicit fiberwise injection for every Noetherian subset.
+\end{corollary}
+\begin{proof}
+For a Noetherian $K\subseteq E$ every section
+$K_p=\{n:(p,n)\in K\}$ is finite: an infinite subset of $\N$ has order
+type $\omega$. If $K_p$ is nonempty, set $b_p=1+\max K_p$ and send
+$(p,n)\in K$ to $(p,b_p+n)$. Its second coordinate exceeds every member
+of $K_p$, so it is outside $K$ and strictly above $(p,n)$. Equal images
+have equal first coordinates and then equal second coordinates, proving
+injectivity. This is also a direct cardinality witness for local shortness
+\cite[Definition 2.14]{salinas}.
+\end{proof}
+
+For a nonzero ordinal $\alpha$, an \emph{$\alpha$-skeleton}
+\cite[Definition 2.33]{salinas} is a disjoint family of inherited
+$\alpha$-chains whose union is cofinal: every point lies below a point of
+one of the chains.
+
+\begin{corollary}\label{skeleton}
+Every poset has an extension partitionable into $\alpha$-chains for each
+nonzero ordinal $\alpha$, and hence an extension with an $\alpha$-skeleton.
+For each integer $n\geq2$, an $n$-skeleton need not extend to a partition
+of the original poset into $n$-chains.
+\end{corollary}
+\begin{proof}
+Order $P\times\alpha$ by $(p,\xi)\leq(q,\eta)$ if $p<q$, or if $p=q$
+and $\xi\leq\eta$. The same order-law argument as in
+Proposition~\ref{existence} applies. The map $p\mapsto(p,0)$ embeds $P$,
+and the fibers partition the extension into $\alpha$-chains. For the second
+claim, a chain with $n+1$ points has an $n$-chain containing its greatest
+point, hence an $n$-skeleton. Its cardinality is not divisible by $n$, so
+it cannot be partitioned into $n$-chains.
+\end{proof}
+
+\section{Coverage and verification}
+The following table distinguishes answers to the posed questions, consequences
+not posed there, and results already supplied by the posing paper. In particular,
+the source itself resolves its local-shortness conjecture negatively.
+{\small
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{.27\linewidth}>{\raggedright\arraybackslash}p{.66\linewidth}@{}}
+\toprule
+Source item in \cite{salinas} & Coverage here\\\midrule
+\endfirsthead
+\toprule
+Source item in \cite{salinas} & Coverage here (continued)\\\midrule
+\endhead
+Question 2.32, p.~14 & Answered: no. Explicit two-point and connected
+three-point counterexamples. Proposition~\ref{existence} proves existence
+without leastness.\\
+Finite and bounded-height cases of Question 2.32 & Not separately posed;
+proved: Theorem~\ref{finite} gives the exact countable bounded-height
+classification, including all finite posets.\\
+Remark 2.29, p.~13 & The source states order duality. Not posed there;
+proved: dual obstruction and classification, Corollary~\ref{dual}.\\
+Question 2.34, p.~14; Definition 2.33 & Partial answers: Corollary~\ref{skeleton}
+gives partitionable extensions for every $\alpha>0$ and shows that an
+$n$-skeleton alone is insufficient for every finite $n\geq2$. General
+criteria for the original poset are not covered.\\
+Question 2.3, p.~3; Theorem 2.27, p.~12 & Prior proof cited: Salinas Schmeis
+(2026), Theorem 2.27, gives the general criterion. Not posed separately;
+proved: explicit lifting witness for the lexicographic extensions,
+Corollary~\ref{lifting}.\\
+Question 2.15, p.~7; Conjecture 2.19, p.~8 & Prior proof cited: Salinas Schmeis
+(2026), Corollaries 2.23 and 2.25, already gives locally short posets without
+partitions. No new general criterion is claimed here.\\
+Example 2.10, pp.~5--6; Remark 2.29, p.~13 & Prior proof cited: Salinas
+Schmeis (2026), for the uncountable chain and its duality examples.
+No new partition theorem for those chains is proved here.\\
+Question 2.30, p.~13 & Not covered: existence and values of the reflection
+cardinal $\kappa_P$.\\
+Question 2.31, p.~14 & Not covered: equivalence of the maximal-chain-family
+principle to weak choice principles in ZF.\\
+\bottomrule
+\end{longtable}}
+
+The pinned
+\href{https://github.com/the-omega-institute/trureturing/blob/2b5b552e72596710282b713f6587c7020544535d/D5/S3/ConceptDynamics/DagCompletion/SalinasSchmeisOmegaChainExtensionRefutation.lean}{Lean file for the fork obstruction}
+contains the declaration \texttt{result :\ $\neg$\ claim}.
+Here \texttt{claim} is the universal extension assertion in
+\eqref{universal}, with induced order embeddings and literal partitions into
+subsets order-isomorphic to $\N$. Its proof uses the fork, the two orders
+\eqref{rays}--\eqref{tail}, and their displayed partitions. This declaration
+covers the negative answer via the fork. In the namespace
+\begin{quote}\small\ttfamily
+D5.S3.ConceptDynamics.DagCompletion.\\
+SalinasSchmeisOmegaChainExtensionRefutation
+\end{quote}
+\noindent
+\texttt{OmegaPartitionable} means a literal partition into inherited
+$\omega$-chains, and \texttt{IsExtension} means an induced order embedding.
+The two-point sharpening, arbitrary-poset extension construction, countable
+bounded-height classification, dual statements, explicit lifting injection,
+and ordinal-chain extension construction have the written proofs above.
+The accompanying \texttt{verify.py} checks the orders,
+embeddings and structural implications on explicitly bounded sets; its output
+states the bounds and is separate from the proofs for the infinite orders.
+It also checks the finite-poset constructions for every transitively closed
+subrelation of the natural order on at most five points.
+
+\begin{thebibliography}{2}
+\bibitem{salinas} Remi Salinas Schmeis,
+\emph{General Criterion for a Poset to Admit a Partition Into
+$\omega$-Chains}, arXiv:2610.29056v1, October 21, 2026, 15 pp.
+\url{https://arxiv.org/abs/2610.29056v1}.
+\bibitem{abela} Kevin Abela and Emmanuel Chetcuti,
+\emph{Regular Sublattices, O-Closed Ideals and Dedekind--MacNeille Completions},
+arXiv:2609.16280v2, October 21, 2026, 14 pp.
+\url{https://arxiv.org/abs/2609.16280v2}.
+\end{thebibliography}
+\smallskip\noindent\small
+\copyright\ 2026 Haobo Ma and Wenlin Zhang.
+Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
+\url{https://creativecommons.org/licenses/by/4.0/}
+\end{document}

@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "rays_domain": "{0,1} x {0,...,23}",
+  "tail_domain": "{0,...,47}",
+  "order_and_embedding_checks": "pass",
+  "partition_enumeration_indices": "0,...,23",
+  "rays_structural_triples": 110592,
+  "tail_structural_triples": 110592,
+  "naturally_labelled_posets_by_size": {
+    "1": 1,
+    "2": 2,
+    "3": 7,
+    "4": 40,
+    "5": 357
+  },
+  "lifting_ordinal_and_partition_checks": {
+    "lexicographic_orders": 40,
+    "finite_fiber_subsets": 29200,
+    "ordinal_fiber_sizes": "1,...,4",
+    "lifting_sections": "subsets of {0,...,3} in each of at most three fibers",
+    "countable_partition_values": "0,...,2047",
+    "finite_skeleton_sizes": "2,...,10"
+  },
+  "scope": "Finite checks of the displayed orders and implications; infinite statements have written proofs in note.tex."
+}

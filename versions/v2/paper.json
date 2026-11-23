@@ -1,0 +1,66 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 80611,
+      "matches_public": true,
+      "path": "paper.pdf",
+      "public_sha256": "2199ecb8b9d5153c4f2d26c5bb415994c6c83d3ee9bb98467308d3353cccae65",
+      "sha256": "2199ecb8b9d5153c4f2d26c5bb415994c6c83d3ee9bb98467308d3353cccae65"
+    },
+    "source": {
+      "bytes": 12519,
+      "matches_public": true,
+      "path": "source.archive",
+      "public_sha256": "2040dc038ef1a9a6676a60ad9003378e7d5d64344b506b865d9a00222bbc2810",
+      "sha256": "2040dc038ef1a9a6676a60ad9003378e7d5d64344b506b865d9a00222bbc2810"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "Question 2.32 on page 14 of Remi Salinas Schmeis's General Criterion for a Poset to Admit a Partition Into ω-Chains (arXiv:2610.29056v1, 2026) asks whether every poset has an ω-chain-partitionable extension that order-embeds into every such extension. We answer negatively: even a two-element antichain has no such extension. Two countable extensions force incompatible behavior for upper bounds of incomparable elements. The same argument gives the connected three-element fork as a counterexample and, by order duality, the corresponding negative answer for ω*-chains. More generally, a nonempty countable poset of bounded finite height has such a least extension if and only if it has a greatest element. Every poset has a partitionable extension, even with ω replaced by any nonzero ordinal.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": null,
+    "current_version": 2,
+    "doi": null,
+    "lean_source": {
+      "revision": "2b5b552e72596710282b713f6587c7020544535d",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/2b5b552e72596710282b713f6587c7020544535d/D5/S3/ConceptDynamics/DagCompletion/SalinasSchmeisOmegaChainExtensionRefutation.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "bytes": 80611,
+      "sha256": "2199ecb8b9d5153c4f2d26c5bb415994c6c83d3ee9bb98467308d3353cccae65",
+      "url": "/api/v1/collected-papers/salinas-omega-chain-extension/files/pdf?version=2"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-23T06:41:38.045178367Z",
+    "record": "salinas-omega-chain-extension",
+    "repository_name": "salinas-omega-chain-extension",
+    "source": {
+      "bytes": 12519,
+      "sha256": "2040dc038ef1a9a6676a60ad9003378e7d5d64344b506b865d9a00222bbc2810",
+      "url": "/api/v1/collected-papers/salinas-omega-chain-extension/files/source?version=2"
+    },
+    "title": "Bounded-height classification for Salinas Schmeis's ω-chain extension question",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-23T06:41:38.045178367Z",
+        "revision": "2",
+        "version": 2
+      }
+    ],
+    "work": "salinas-omega-chain-extension"
+  }
+}
